@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function redirectToAffiliateUrl() {
+            // 获取 URL 中的 aff 参数以决定跳转目标
+            const urlParams = new URLSearchParams(window.location.search);
+            const affiliateCode = urlParams.get('aff');
+            if (affiliateCode === 'ihezu') {
+                // 跳转到 example.com
+                window.location.href = 'https://ihezu.love/wNfdF8';
+
+            } else if (affiliateCode === 'universalbus') {
+                // 跳转到 google.com
+                window.location.href = 'https://universalbus.cn/?s=Vd7N1uipnB';
+
+            } else if (affiliateCode === 'nfvideo') {
+                // 跳转到 google.com
+                window.location.href = 'https://nf.video/M91cC';
+
+            } else if (affiliateCode === 'naifeistation') {
+                // 跳转到 google.com
+                window.location.href = 'https://www.naifeistation.com/i/1CmUlF'; 
+          
+            } else if (affiliateCode === 'metshop') {
+                // 跳转到 google.com
+                window.location.href = 'https://metshop.cn?referrerUserNo=MTUNJF956VHC';
+
+            } else {
+                // 其他情况，不进行跳转
+                console.error('未知的 aff 参数：' + affiliateCode);
+            }
+        }
+
+        // 当页面加载完成后执行
+        window.onload = redirectToAffiliateUrl;
+    </script>
+</head>
+<body>
+</body>
+</html>
