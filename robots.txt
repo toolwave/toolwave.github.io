@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://toolwave.github.io/sitemap.xml
+Sitemap: https://toolwave.github.io/assets/sitemap.xml
