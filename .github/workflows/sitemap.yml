@@ -18,7 +18,7 @@ jobs:
         uses: cicirello/generate-sitemap@v1
         with:
           base-url-path: https://toolwave.github.io
-          sitemap-path: sitemap.xml
+          sitemap-path: sitemap-index.xml
           include-pdf: false
 
       - name: Commit sitemap
