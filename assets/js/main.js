@@ -53,3 +53,47 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// ====== 优惠码复制功能 ======
+function copyPromoCode() {
+  // 获取优惠码文本
+  const promoCode = document.getElementById('promoCode').innerText;
+  const copyBtn = document.querySelector('.copy-btn');
+  const copyText = document.querySelector('.copy-text');
+
+  // 复制到剪贴板
+  navigator.clipboard.writeText(promoCode).then(function() {
+    // 更新按钮状态
+    copyBtn.classList.add('copied');
+    copyText.innerText = '已复制';
+
+    // 3秒后恢复按钮状态
+    setTimeout(function() {
+      copyBtn.classList.remove('copied');
+      copyText.innerText = '复制';
+    }, 1800);
+  }).catch(function(err) {
+    // 如果浏览器不支持clipboard API，使用传统方法
+    const textarea = document.createElement('textarea');
+    textarea.value = promoCode;
+    textarea.style.position = 'fixed';
+    textarea.style.opacity = '0';
+    document.body.appendChild(textarea);
+    textarea.select();
+
+    try {
+      document.execCommand('copy');
+      copyBtn.classList.add('copied');
+      copyText.innerText = '已复制';
+
+      setTimeout(function() {
+        copyBtn.classList.remove('copied');
+        copyText.innerText = '复制';
+      }, 3000);
+    } catch (err) {
+      alert('复制失败，请手动复制优惠码');
+    }
+
+    document.body.removeChild(textarea);
+  });
+}

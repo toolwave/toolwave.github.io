@@ -633,3 +633,146 @@ main tr:nth-child(even) {
 .logo:hover {
   opacity: 0.85;
 }
+
+/* ====== 优惠购买组件样式 ====== */
+.promo-purchase-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  margin: 24px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 2px solid rgba(239, 83, 79, 0.1);
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.promo-purchase-box:hover {
+  border-color: rgba(239, 83, 79, 0.3);
+  box-shadow: 0 6px 16px rgba(239, 83, 79, 0.1);
+}
+
+.promo-code-section {
+  background: rgba(239, 83, 79, 0.04);
+  border-radius: 10px;
+  padding: 18px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+.promo-label {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 10px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.promo-label i {
+  color: #EF534F;
+}
+
+.promo-code-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.promo-code {
+  flex: 1;
+  background: #fff;
+  border: 2px dashed #EF534F;
+  border-radius: 8px;
+  padding: 14px 16px;
+  font-family: 'Courier New', monospace;
+  font-size: 20px;
+  font-weight: 700;
+  color: #EF534F;
+  text-align: center;
+  letter-spacing: 3px;
+  box-sizing: border-box;
+}
+
+.copy-btn {
+  background: #EF534F;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 22px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.copy-btn:hover {
+  background: #d64843;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(239, 83, 79, 0.3);
+}
+
+.copy-btn:active {
+  transform: translateY(0);
+}
+
+.copy-btn.copied {
+  background: #2ecc71;
+}
+
+.purchase-btn {
+  width: 100%;
+  background: #EF534F;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 16px 24px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.purchase-btn:hover {
+  background: #d64843;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(239, 83, 79, 0.3);
+}
+
+.purchase-btn:active {
+  transform: translateY(0);
+}
+
+/* 优惠码组件响应式设计 */
+@media (max-width: 768px) {
+  .promo-purchase-box {
+    padding: 20px;
+    margin: 20px 0;
+  }
+
+  .promo-code-container {
+    flex-direction: column;
+  }
+
+  .promo-code {
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+
+  .copy-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 12px 20px;
+  }
+}
