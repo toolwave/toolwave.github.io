@@ -1,10 +1,4 @@
-# ToolWave SEO 优化指南
 
-> 本文档针对托管在 GitHub Pages 上的静态网站（toolwave.github.io）提供全面的 SEO 优化建议。
-
----
-
-## 诊断结果概览
 
 ### 当前存在的主要问题：
 
@@ -49,70 +43,6 @@
 - 每个页面的canonical指向自身，避免重复内容
 - og:image建议使用1200x630px的图片
 
----
-
-### 2. 修复HTML代码错误
-
-**问题：** 使用了`<span>`标签，这是严重的HTML错误
-
-**解决方案：** 全局替换
-```bash
-# 在所有HTML文件中将 <span> 替换为 <span>
-```
-
-**检查清单：**
-- [ ] 所有`<span class="external-link">`改为`<span class="external-link">`
-- [ ] 所有`</spam>`改为`</span>`
-
----
-
-### 3. 完善Sitemap结构
-
-**当前问题：**
-- 只有`sitemap-zh.xml`
-- 所有页面lastmod都是同一时间（不真实）
-- hk目录内容未被收录
-
-**建议的Sitemap结构：**
-
-```
-/robots.txt
-  ├── /sitemap.xml (主索引)
-  │    ├── /sitemap-content.xml (主要内容)
-  │    ├── /sitemap-hk.xml (hk目录)
-  │    └── /sitemap-images.xml (可选，图片sitemap)
-```
-
-**sitemap.xml 示例：**
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <sitemap>
-    <loc>https://toolwave.github.io/sitemap-content.xml</loc>
-    <lastmod>2025-12-30</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>https://toolwave.github.io/sitemap-hk.xml</loc>
-    <lastmod>2025-12-30</lastmod>
-  </sitemap>
-</sitemapindex>
-```
-
-**robots.txt 修改为：**
-```
-User-agent: *
-Allow: /
-Crawl-delay: 1
-
-Sitemap: https://toolwave.github.io/sitemap.xml
-```
-
-**最佳实践：**
-- [ ] lastmod使用真实的最后修改时间
-- [ ] 每次更新内容后更新对应lastmod
-- [ ] 保持sitemap文件大小在50MB以内（未压缩）
-
----
 
 ### 4. 添加结构化数据（Schema.org）
 
@@ -232,14 +162,6 @@ Sitemap: https://toolwave.github.io/sitemap.xml
 </section>
 ```
 
-**内部链接最佳实践：**
-- [ ] 每篇文章至少3-5个内部链接
-- [ ] 使用描述性锚文本
-- [ ] 建立内容集群（话题集群模式）
-- [ ] 添加面包屑导航
-
----
-
 ### 6. 图片SEO优化
 
 **检查清单：**
@@ -264,46 +186,8 @@ Sitemap: https://toolwave.github.io/sitemap.xml
 - [ ] 考虑使用WebP格式（更小体积）
 - [ ] 大图使用picture元素提供多种格式
 
-**图片sitemap（可选）：**
-```xml
-<url>
-  <loc>https://toolwave.github.io/article.html</loc>
-  <image:image>
-    <image:loc>https://toolwave.github.io/img/image.jpg</image:loc>
-    <image:caption>图片描述</image:caption>
-  </image:image>
-</url>
-```
 
----
 
-## 二、内容和关键词优化
-
-### 7. 关键词策略
-
-**目标关键词研究：**
-- 使用工具：Google Keyword Planner、Ahrefs、Semrush
-- 分析竞争对手关键词
-- 关注长尾关键词（竞争小，转化高）
-
-**关键词布局：**
-
-| 位置 | 关键词密度 | 说明 |
-|------|-----------|------|
-| 页面标题 | 1次 | 最重要，包含主关键词 |
-| URL | 1次 | 简短且包含关键词 |
-| H1标题 | 1次 | 每页唯一 |
-| H2-H6 | 2-3次 | 自然使用 |
-| 首段 | 1-2次 | 前100字符内 |
-| 正文 | 3-5次 | 自然融入 |
-| Meta Description | 1-2次 | 吸引点击 |
-| Alt文本 | 1-2次 | 相关图片 |
-
-**示例：**
-- 主关键词：ChatGPT教程
-- 长尾关键词：ChatGPT初学者指南、如何使用ChatGPT、ChatGPT注册教程
-
----
 
 ### 8. 内容质量优化
 
@@ -409,54 +293,6 @@ Sitemap: https://toolwave.github.io/sitemap.xml
 - Google Mobile-Friendly Test
 - 实际设备测试
 
----
-
-### 11. HTTPS和安全性
-
-GitHub Pages自动提供HTTPS，确保：
-- [ ] 所有链接使用HTTPS
-- [ ] 混合内容检查（无HTTP资源）
-- [ ] 重定向HTTP到HTTPS
-
----
-
-## 四、外部链接和推广
-
-### 12. Google Search Console配置
-
-**步骤：**
-
-1. 访问 https://search.google.com/search-console
-2. 添加资源（https://toolwave.github.io）
-3. 验证网站所有权（HTML文件验证）
-4. 提交sitemap
-5. 监控索引状态
-
-**关键功能使用：**
-- [ ] URL检查工具（测试单个页面）
-- [ ] 索引覆盖率报告
-- [ ] 移动端可用性
-- [ ] 核心网页指标（Core Web Vitals）
-- [ ] 手动操作（惩罚检查）
-
----
-
-### 13. 百度SEO（针对中文用户）
-
-**百度站长平台：**
-1. 注册：https://ziyuan.baidu.com/
-2. 添加网站
-3. 验证（同Google）
-4. 提交sitemap
-5. 使用"链接提交"功能
-
-**百度特殊考虑：**
-- [ ] 百度对JS支持较差，确保关键内容在HTML中
-- [ ] 中文内容更友好
-- [ ] 国内访问速度重要
-
----
-
 ### 14. 外链建设策略
 
 **高质量外链来源：**
@@ -518,18 +354,6 @@ GitHub Pages自动提供HTTPS，确保：
 </script>
 ```
 
-**百度统计：**
-```html
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?YOUR_ID";
-  var s = document.getElementsByTagName("script")[0];
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
-```
 
 **关键指标监控：**
 - [ ] 流量来源（自然搜索、直接、推荐、社交媒体）
@@ -806,17 +630,3 @@ var _hmt = _hmt || [];
 </script>
 ```
 
----
-
-**文档版本：** v1.0
-**最后更新：** 2025-12-30
-**维护者：** ToolWave Team
-
-**注意事项：**
-1. SEO是一个长期过程，需要持续优化
-2. 优先完成高优先级任务
-3. 定期检查和更新内容
-4. 关注搜索引擎算法更新
-5. 用户体验始终是第一位的
-
-**祝你的网站流量节节攀升！** 🚀
