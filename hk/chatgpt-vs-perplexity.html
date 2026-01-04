@@ -148,7 +148,7 @@
 
       <p>大多數 ChatGPT 用戶所依賴的 GPT‑4o 模型是一個經典的 LLM(同時也是一個 LMM)，因此它可以處理多模態輸入(圖像、音頻、文本)。而 Perplexity AI 主要基於 LLM 構建，其多模態交互能力較弱，更傾向於文本理解 + 實時檢索 + 來源引用。</p>
       <p>那麼，這些人工智能模型目前的評級如何？在<a href="https://artificialanalysis.ai/？models=o1%2Co3-mini%2Cgpt-4o%2Cgpt-4o-mini%2Co3-mini-high%2Cgpt-4o-chatgpt%2Cgpt-4-5%2Cgrok-3%2Cgrok-3-mini-reasoning%2Cgrok-2-1212%2Cgrok-3-reasoning&endpoints=&intelligence-tab=reasoning" target="_blank" rel="noopener noreferrer" class="external-link">ArtificialAnalysis.ai網站</a>上，他們的"人工智能指數"對比圖衡量了領域知識、推理、數學和編程等領域的表現。</p>
-      <img src="pictures/model-comparison.png" style="width:100%; height:auto; display:block; margin:0 auto;" alt="模型对比">
+      <img src="../pictures/model-comparison.png" style="width:100%; height:auto; display:block; margin:0 auto;" alt="模型对比">
       <p>從結果來看，OpenAI 的 GPT-4o Pro(預估)和官方 GPT-4o (O3) 分別以 71 分和 70 分位居榜首，表明它們在整體性能上仍然領先。Claude 3.5 Sonar 系列的得分在 43 到 49 分之間，略低於 GPT-4.5 的 53 分。</p>
       <p>GPT-4o 的排名相對較低，但對於一個同時處理文本和圖像的多模態模型來說，它的語言理解能力仍然相當出色。畢竟，它必須在推理能力和多模態性之間取得平衡——魚與熊掌不可兼得。</p>
       <p>由於它們基於不同的型號，定位也不同，使用起來感覺也有所不同。下面，我將逐一分析它們的優缺點。</p>
@@ -168,23 +168,23 @@
 
       <h3>數據分析與整合技能</h3>
       <p>在我提交之前收集的學生學習時間和學業成績數據後，ChatGPT 在幾秒鍾內對其進行了分析，生成了散點圖並擬合了回歸線——所有這些都具有令人印象深刻的速度和準確性。</p>
-      <img src="pictures/study-time-grades.png" style="width:100%; height:auto; display:block; margin:0 auto;" alt="studytimegrades">
+      <img src="../pictures/study-time-grades.png" style="width:100%; height:auto; display:block; margin:0 auto;" alt="studytimegrades">
       <p>圖表清晰地顯示了學習時間與學業成績之間的高度正相關關系。GPT 生成的輸出簡潔明了，結構清晰，準確反映了原始數據分布。擬合的回歸線有效地模擬了總體趨勢，既具有可解釋性，又具有預測價值。</p>
 
       <h3>編碼能力</h3>
       <p>根據 JetBrains <em>2024 年開發者生態系統報告</em>，現在幾乎<a href="https://www.jetbrains.com/lp/devecosystem-2024/？utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer" class="external-link">一半的開發者</a>定期使用 ChatGPT 執行編碼任務——尤其是生成代碼片段、調試和學習實現邏輯。</p>
       <p>雖然作爲一名科技博主，我對編程有一些基本的了解，但我並非專業開發者。ChatGPT 真正強大的地方在於，它能讓像我這樣的非專業人士輕松構建和部署應用或遊戲。例如，我使用 ChatGPT o4-mini-high 模型創建了一個簡單的炸彈人風格遊戲——無需本地設置，整個過程流暢且對初學者友好。</p>
       <p>我所做的只是輸入一個簡單的提示：<em>"你能寫一個經典的炸彈人風格的遊戲並讓我預覽一下嗎？使用任何你能找到的圖像作爲視覺效果。"</em></p>
-      <img src="pictures/bomberman-code.png" style="width:100%; height:auto; display:block; margin:0 auto;" alt="bombermancode">
+      <img src="../pictures/bomberman-code.png" style="width:100%; height:auto; display:block; margin:0 auto;" alt="bombermancode">
       <p><em>它很快就給出了令人滿意的結果。更讓我印象深刻的是OpenAI最近推出的"思維可視化"功能，它讓我能夠實時看到它的逐步推理過程。這種感覺真的像是在與一位非常聰明的夥伴合作。</em></p>
       <p><em>在這個任務中，ChatGPT 最初考慮使用 Python 來實現，但很快意識到我當前的環境不支持 Pygame 渲染。隨後，它探索了其他解決方案，建議使用 HTML/JavaScript Canvas 或 React 進行交互。最終，它決定採用基於 Canvas API 的 HTML 和 JavaScript 解決方案——這對於基於 Web 的執行來說是一個明智且適應性強的選擇。</em></p>
-      <img src="pictures/thinking-visualization.png" style="width:100%; height:auto; display:block; margin:0 auto;" alt="thinkingvisualization">
+      <img src="../pictures/thinking-visualization.png" style="width:100%; height:auto; display:block; margin:0 auto;" alt="thinkingvisualization">
       <p>更重要的是，盡管我沒有給出具體的視覺效果指示，ChatGPT 也展現出了令人印象深刻的適應性。一旦它意識到無法提取外部圖像，它就會迅速轉向使用簡單的彩色塊來表示遊戲元素——這是一種優雅而實用的解決方法。</p>
-      <img src="pictures/bomberman-visual-1.png" style="width:100%; height:auto; display:block; margin:0 auto;" alt="bombermanvisual1">
+      <img src="../pictures/bomberman-visual-1.png" style="width:100%; height:auto; display:block; margin:0 auto;" alt="bombermanvisual1">
       <p>後來，我覺得視覺效果可以稍微改進一下，所以我要求它更改某些元素的顏色。我的指令很模糊——幾乎說不清楚——但 ChatGPT 仍然準確理解了我的意思，並相應地調整了視覺效果。</p>
-      <img src="pictures/bomberman-visual-2.png" style="width:100%; height:auto; display:block; margin:0 auto;" alt="bombermanvisual2">
+      <img src="../pictures/bomberman-visual-2.png" style="width:100%; height:auto; display:block; margin:0 auto;" alt="bombermanvisual2">
       <p>Perplexity AI 在這方面的靈活性差得多。我發送了完全相同的提示，但它忽略了我要求預覽結果的請求，也沒有意識到我的本地環境不支持 Pygame。相反，它只是返回了一段 Python 代碼，而沒有考慮這段代碼是否真的能在我的終端上運行。</p>
-      <img src="pictures/perplexity-coding.png" style="width:100%; height:auto; display:block; margin:0 auto;" alt="Perplexitycoding">
+      <img src="../pictures/perplexity-coding.png" style="width:100%; height:auto; display:block; margin:0 auto;" alt="Perplexitycoding">
 
       <h3>其他功能</h3>
       <p>除了上述功能外，ChatGPT 還能處理各種各樣的附加任務。正如你可能從前面的例子中了解到的那樣，它在語言理解方面的能力尤其令人印象深刻——除非它能夠深入理解意圖和上下文，否則它不可能根據我模糊的指令準確地傳達我想要的內容。</p>
@@ -208,13 +208,13 @@
       <p>Perplexity AI 於 2022 年底上線，其核心優勢在於將人工智能與實時網絡搜索緊密結合，打造一種全新的對話式搜索體驗。截至 2025 年，Perplexity 在信息檢索領域取得了長足的進步。</p>
       <p>但隨着過去三年人工智能技術的爆發式增長，幾乎所有主流模型都具備了信息檢索能力。那麼，Perplexity 曾經的優勢還有多少呢？尤其是與 ChatGPT 相比，它在如今的搜索和檢索領域是否仍然佔據着明顯的優勢？</p>
       <p>最直接的答案是向兩個AI提出同一個問題，並比較它們的答案。所以我首先問它們："爲什麼50501運動會在美國發生？" 以下是ChatGPT的回答。</p>
-      <img src="pictures/chatgpt-50501.jpeg" style="width:100%; height:auto; display:block; margin:0 auto;" alt="ChatGPT50501">
+      <img src="../pictures/chatgpt-50501.jpeg" style="width:100%; height:auto; display:block; margin:0 auto;" alt="ChatGPT50501">
       <p>默認情況下，GPT 不啓用瀏覽功能——你需要手動開啓瀏覽器模式。但是，如果你的提示包含"請查找最新信息"或"確保其基於事實"之類的短語，即使沒有明確啓用瀏覽功能，它也有可能觸發網頁搜索，這表明它的響應方式具有一定的靈活性。</p>
       <p>從結果來看，GPT 雖然確實進行了實時搜索，但其引用內容的深度和豐富度略有不足。即使是免費版的 Perplexity，它也能提供更全面的信息和更強大的來源支持。只需查看下面 Perplexity 的響應截圖，你就能立即注意到其中的差異。</p>
-      <img src="pictures/perplexity-50501.png" style="width:100%; height:auto; display:block; margin:0 auto;" alt="Perplexity50501">
+      <img src="../pictures/perplexity-50501.png" style="width:100%; height:auto; display:block; margin:0 auto;" alt="Perplexity50501">
       <p>最顯著的區別出現在"關鍵動向"部分：GPT 僅引用了維基百科的相關內容，信息量相對有限。相比之下，Perplexity 不僅提供了更詳細的背景分析，還引用了<em>《新聞周刊》</em>和<em>《經濟時報》</em>等多個知名來源的報道，提供了更廣泛的報道和更深入的洞察。</p>
       <p>這種差距在需要多維度理解和基於事實支持的查詢中尤爲明顯。我隨後讓 Perplexity AI 查找"2023 年全球溫室氣體排放量"，它再次表現可靠——保持了其標志性的優勢：引用多個來源，提供準確的信息，並以清晰、結構化的格式呈現所有內容。</p>
-      <img src="pictures/greenhouse-emissions.png" style="width:100%; height:auto; display:block; margin:0 auto;" alt="greenhouseemissions">
+      <img src="../pictures/greenhouse-emissions.png" style="width:100%; height:auto; display:block; margin:0 auto;" alt="greenhouseemissions">
       <p>綜合來看，Perplexity AI 在實時搜索和引用透明度方面依然表現強勁，尤其適合需要最新信息或權威來源的任務。雖然 ChatGPT 在引用來源數量方面略遜一籌，但其整體響應在邏輯性和準確性方面仍然可靠。</p>
     </section>
 
@@ -222,12 +222,12 @@
       <h2 class="external-link">Perplexity AI 與 ChatGPT：語言理解比較</h2>
       <p>雖然 Perplexity AI 無疑是實時搜索領域最強大的 AI 之一，但僅憑這一點還不足以評估一款 AI 工具。語言理解在整體用戶體驗中也扮演着同樣重要的角色。</p>
       <p>Perplexity AI 確實具備對話助手的功能。它提供了與 ChatGPT 類似的聊天界面和交互風格。尤其是在其專業搜索模式下，它可以處理多輪對話、跟進問題，並分析用戶意圖以優化其響應。</p>
-      <img src="pictures/perplexity-search.png" style="width:100%; height:auto; display:block; margin:0 auto;" alt="Perplexitysearch">
+      <img src="../pictures/perplexity-search.png" style="width:100%; height:auto; display:block; margin:0 auto;" alt="Perplexitysearch">
       <p>然而，在語境理解和情感互動方面，Perplexity 與 ChatGPT 相比略有不足。例如，當我要求它分享對"失去與希望"的看法時，它的回應顯得過於機械化——缺乏情感深度，也缺乏那種能夠真正進行情感交流的人工智能所應具備的人類般的同理心。</p>
-      <img src="pictures/perplexity-loss-hope.jpeg" style="width:100%; height:auto; display:block; margin:0 auto;" alt="Perplexitylosshope">
+      <img src="../pictures/perplexity-loss-hope.jpeg" style="width:100%; height:auto; display:block; margin:0 auto;" alt="Perplexitylosshope">
       <p>相比之下，ChatGPT 對同一問題的回答——它對"失落與希望"的解讀——則顯得更加人性化。它不僅提供了一個情感豐富的答案，還觸及了一層哲學思考。</p>
       <p>ChatGPT 能夠以一種既真摯又深思熟慮的方式探索這些復雜的情感，展現出對情感的細致理解以及對生命意義的深刻思考。最終，回復溫暖、富有洞察力，並真正引人入勝。</p>
-      <img src="pictures/chatgpt-loss-hope.png" style="width:100%; height:auto; display:block; margin:0 auto;" alt="ChatGPTlosshope">
+      <img src="../pictures/chatgpt-loss-hope.png" style="width:100%; height:auto; display:block; margin:0 auto;" alt="ChatGPTlosshope">
       <p>Perplexity AI 更傾向於提供精確、結構化的信息響應，但它缺乏 ChatGPT 對話風格的自然流暢和情感細微差別。</p>
       <p>雖然 Perplexity 也能處理寫作、文檔和圖像分析，甚至專業推理等任務，但我們的測試表明，它在靈活性和多功能性方面不如 ChatGPT。它並非這類任務的理想選擇。</p>
     </section>
@@ -237,7 +237,7 @@
       <p>我會在本文末尾分享我的個人推薦，但最終，找到適合你的 AI 的最佳方式是親自嘗試。ChatGPT 和 Perplexity AI 都提供免費版本，你可以探索它們的核心功能，並了解它們在實際應用中的運作方式。</p>
       <p>如果你有興趣嘗試 ChatGPT 和 Perplexity 的高級版本，我有一個很棒的建議：考慮使用一個集成了多個頂級模型的一體化 AI 平臺。這樣，你就可以同時使用這兩個工具以及其他工具，而無需單獨訂閱。</p>
       <p>我個人使用過 環球巴士 的一體化平臺，體驗非常棒。它集成了幾乎所有主流的 AI 模型，讓你可以一站式試用 ChatGPT 和 Perplexity AI 的付費版本。而且，它比通過官方網站單獨訂閱任何一款工具更實惠。</p>
-      <img src="pictures/gamsgo-platform.png" style="width:100%; height:auto; display:block; margin:0 auto;" alt="gamsgo平台">
+      <img src="../pictures/gamsgo-platform.png" style="width:100%; height:auto; display:block; margin:0 auto;" alt="gamsgo平台">
       <p>如果你還沒有準備好購買一體化的人工智能平臺，環球巴士 還提供<a href="../affiliates.html?aff=universalbus" target="_blank" rel="nofollow noopener" class="external-link">ChatGPT Plus</a>和 Perplexity Pro 的共享訂閱服務。價格比直接通過官方網站訂閱便宜約 30%，因此是一個經濟實惠的選擇。</p>
     </section>
 
