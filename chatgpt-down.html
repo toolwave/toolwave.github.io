@@ -54,9 +54,9 @@
       <p>ChatGPT 刚上线时，偶尔出现服务中断并不奇怪。毕竟，一个短时间内吸引海量用户的全新产品需要时间来扩展其基础设施。但到了 2026 年，OpenAI 已经是一家估值数百亿美元的公司，甚至<a href="../everything-about-gpt-5.html" target="_blank" rel="noopener noreferrer">GPT-5 也已经发布</a>，在25年底，他们也发布了最新的5.2模型，但是为什么这些问题仍然如此频繁地发生？</p>
       <p>事实上，主要原因可以归结为三类：</p>
       <ul>
-        <li><span class="external-link"> 流量高峰 </spam>：每当有重大新闻或新功能发布时，大量用户涌入，服务器容量很快就会不堪重负。2024 年 6 月 4 日，GPT-4o 向免费用户广泛开放后不久，就发生了长达 4 小时的宕机。</li>
-        <li><span class="external-link"> 基础设施复杂性 </spam>：与仅提供文本和图像的传统网站不同，大型 AI 模型依赖于庞大的 GPU 集群。管理这些资源比管理常规服务器复杂得多，单点故障就可能影响整个服务。</li>
-        <li><span class="external-link"> AI 服务的独特性 </spam>：传统软件发生故障时，通常仅意味着一项功能停止运行。但对于 AI 模型而言，故障可能会导致不可预测的输出。为了确保安全和稳定，服务提供商通常会在检测到风险时选择暂时关闭系统。从这个角度来看，一些"中断"实际上是谨慎的、主动的关闭，旨在防止更大规模的错误或安全风险。</li>
+        <li><span class="external-link"> 流量高峰 </span>：每当有重大新闻或新功能发布时，大量用户涌入，服务器容量很快就会不堪重负。2024 年 6 月 4 日，GPT-4o 向免费用户广泛开放后不久，就发生了长达 4 小时的宕机。</li>
+        <li><span class="external-link"> 基础设施复杂性 </span>：与仅提供文本和图像的传统网站不同，大型 AI 模型依赖于庞大的 GPU 集群。管理这些资源比管理常规服务器复杂得多，单点故障就可能影响整个服务。</li>
+        <li><span class="external-link"> AI 服务的独特性 </span>：传统软件发生故障时，通常仅意味着一项功能停止运行。但对于 AI 模型而言，故障可能会导致不可预测的输出。为了确保安全和稳定，服务提供商通常会在检测到风险时选择暂时关闭系统。从这个角度来看，一些"中断"实际上是谨慎的、主动的关闭，旨在防止更大规模的错误或安全风险。</li>
       </ul>
     </section>
 
@@ -66,7 +66,7 @@
       <p>最直接的方法是访问<a href="https://status.openai.com/" target="_blank" rel="noopener noreferrer" class="external-link">OpenAI 的官方状态页面</a>来查看服务状态。该页面使用不同的颜色来指示当前性能——红色表示中断，黄色表示性能下降。但请注意，此页面上的更新可能会延迟，尤其是在事件发生的最初几分钟内。</p>
       <p><a href="https://downdetector.com/status/openai/" target="_blank" rel="noopener noreferrer" class="external-link">为了获得更及时的更新，你还可以查看Downdetector</a>等第三方监控平台。这些平台会收集实时用户报告，并以趋势图的形式呈现。以 6 月 10 日的宕机事件为例，当天报告数量在短时间内飙升至 1，400 多条，几乎与问题爆发的时间完全吻合。</p>
       <img src="../pictures/downdetector-report.webp" style="width:100%; height:auto; display:block; margin:0 auto;" alt="Downdetector ChatGPT故障监控报告">
-      <p>另一个可靠的信息来源是社交媒体。每当 ChatGPT 遇到问题时，X(以前称为 Twitter)上的用户几乎都会立即开始讨论。搜索"<span class="external-link"> ChatGPT down </spam>"或"<span class="external-link"> OpenAI </spam>"通常会显示最新帖子。在 Reddit 上，OpenAI 社区也有许多用户分享他们遇到的问题以及他们尝试过的解决方案。</p>
+      <p>另一个可靠的信息来源是社交媒体。每当 ChatGPT 遇到问题时，X(以前称为 Twitter)上的用户几乎都会立即开始讨论。搜索"<span class="external-link"> ChatGPT down </span>"或"<span class="external-link"> OpenAI </span>"通常会显示最新帖子。在 Reddit 上，OpenAI 社区也有许多用户分享他们遇到的问题以及他们尝试过的解决方案。</p>
       <p>如果所有这些来源都确认问题普遍存在，那么很可能是服务器端问题。在这种情况下，你所能做的就是耐心等待或切换到其他工具(我稍后会介绍)。另一方面，如果似乎只有你遇到了问题，那么是时候检查你的网络连接、浏览器设置和其他本地因素了。</p>
     </section>
 
@@ -81,15 +81,15 @@
     <section>
       <h2 class="external-link">如果 ChatGPT 无法正常工作，该怎么办</h2>
       <h3>检查网络连接</h3>
-      <p>如果确认问题出在你这边，<span class="external-link"> 你首先应该检查你的网络连接是否稳定 </spam>。ChatGPT 需要可靠且低延迟的连接，即使是轻微的波动也会影响其性能——即使其他网站加载正常。</p>
+      <p>如果确认问题出在你这边，<span class="external-link"> 你首先应该检查你的网络连接是否稳定 </span>。ChatGPT 需要可靠且低延迟的连接，即使是轻微的波动也会影响其性能——即使其他网站加载正常。</p>
       <p>在某些地区，互联网服务提供商可能会限制或限制对 AI 服务的访问，导致 ChatGPT 加载缓慢或行为异常。如果你使用的网络(例如工作或学校)防火墙设置严格，ChatGPT 的访问可能会被完全阻止。</p>
       <img src="../pictures/vpn-connection.webp" style="width:70%; height:auto; display:block; margin:0 auto;" alt="VPN连接配置界面">
       <p>在这种情况下，请尝试使用稳定的 VPN 通过美国或欧洲的服务器进行连接。但是，请务必选择可靠的 VPN 服务，因为不稳定的 VPN 连接实际上会使 ChatGPT 变得更慢。</p>
 
       <h3>清除浏览器缓存和 Cookie</h3>
       <p>排除网络问题后，下一步是检查浏览器缓存。浏览器会存储图片、脚本和 Cookie 等数据以加快加载速度，但过期或损坏的缓存文件可能会导致页面无法正常运行。对于像 ChatGPT 这样经常更新的网络应用来说，旧缓存与最新版本之间的冲突是一个常见问题。</p>
-      <p>在 Chrome 中，你可以按<span class="external-link"> Ctrl+Shift+Delete </spam>(<span class="external-link"> 在 Mac 上按 Cmd+Shift+Delete </spam>)打开清除浏览数据菜单。选择"缓存的图片和文件"和"Cookie 和其他网站数据"，并将时间范围设置为"过去 24 小时"。大多数其他主流浏览器的操作步骤类似。</p>
-      <p>清除缓存后，重新打开 ChatGPT——通常可以解决问题。<span class="external-link"> 当页面无法正常加载时，此方法尤其有效 </spam>。</p>
+      <p>在 Chrome 中，你可以按<span class="external-link"> Ctrl+Shift+Delete </span>(<span class="external-link"> 在 Mac 上按 Cmd+Shift+Delete </span>)打开清除浏览数据菜单。选择"缓存的图片和文件"和"Cookie 和其他网站数据"，并将时间范围设置为"过去 24 小时"。大多数其他主流浏览器的操作步骤类似。</p>
+      <p>清除缓存后，重新打开 ChatGPT——通常可以解决问题。<span class="external-link"> 当页面无法正常加载时，此方法尤其有效 </span>。</p>
 
       <h3>切换到其他浏览器</h3>
       <p>如果清除缓存无法解决问题，请尝试使用其他浏览器(例如 Firefox、Edge 或 Safari)访问 ChatGPT。切换浏览器之前，最好关闭当前浏览器中所有无响应的 ChatGPT 会话，以免与帐户会话数据发生冲突。</p>
@@ -98,17 +98,17 @@
       <h3>注销并重新登录</h3>
       <p>下一步是尝试注销然后重新登录。这将刷新你的登录状态和权限设置。</p>
       <p>登录相关问题的发生频率可能超出你的预期。尤其是在 OpenAI 更新服务器或调整用户权限系统时，旧的登录令牌可能会失效，但你的浏览器可能仍在尝试使用它们。这可能会导致 ChatGPT 出现错误消息，或导致某些功能部分可用但不稳定。</p>
-      <p>点击 ChatGPT 界面右下角的个人资料图标，然后选择"<span class="external-link"> 注销 </spam>"。然后重新输入你的登录凭据。如果你使用 Google 或 Microsoft 帐户登录，则可能需要重新授权访问。</p>
+      <p>点击 ChatGPT 界面右下角的个人资料图标，然后选择"<span class="external-link"> 注销 </span>"。然后重新输入你的登录凭据。如果你使用 Google 或 Microsoft 帐户登录，则可能需要重新授权访问。</p>
       <img src="../pictures/chatgpt-logout.webp" style="width:70%; height:auto; display:block; margin:0 auto;" alt="ChatGPT登出重新登录功能">
-      <p>重新登录后，系统将检索你的最新权限和设置——这通常可以解决登录状态错误导致的问题。<span class="external-link"> 如果 ChatGPT 加载成功，但你在尝试发送消息时不断遇到错误，此方法尤其有用 </spam>。</p>
+      <p>重新登录后，系统将检索你的最新权限和设置——这通常可以解决登录状态错误导致的问题。<span class="external-link"> 如果 ChatGPT 加载成功，但你在尝试发送消息时不断遇到错误，此方法尤其有用 </span>。</p>
 
       <h3>禁用扩展</h3>
       <p>很多情况下，ChatGPT 的问题实际上是由第三方浏览器扩展程序引起的。广告拦截器、隐私工具，甚至一些看似无关的扩展程序都可能干扰 ChatGPT 的正常运行。</p>
-      <p>在 Chrome 中，你可以按<span class="external-link"> Ctrl+Shift+N </spam>(<span class="external-link"> 在 Mac 上按 Cmd+Shift+N </spam>)打开隐身窗口，然后尝试访问 ChatGPT。如果在隐身模式下一切正常，则问题可能出在你的某个扩展程序或某些浏览器设置上。</p>
+      <p>在 Chrome 中，你可以按<span class="external-link"> Ctrl+Shift+N </span>(<span class="external-link"> 在 Mac 上按 Cmd+Shift+N </span>)打开隐身窗口，然后尝试访问 ChatGPT。如果在隐身模式下一切正常，则问题可能出在你的某个扩展程序或某些浏览器设置上。</p>
       <p>你可以逐个禁用扩展程序来识别罪魁祸首，或者简单地继续在隐身模式下使用 ChatGPT 作为临时解决方法。</p>
 
       <h3>开关型号</h3>
-      <p>如果你是付费用户，当 GPT-5 出现问题时，你可以尝试手动切换到<span class="external-link"> GPT-5 思维 </spam>模式。此模式通常比标准 GPT-5 更稳定，尤其是在处理长时间对话或复杂任务时。</p>
+      <p>如果你是付费用户，当 GPT-5 出现问题时，你可以尝试手动切换到<span class="external-link"> GPT-5 思维 </span>模式。此模式通常比标准 GPT-5 更稳定，尤其是在处理长时间对话或复杂任务时。</p>
       <p>更改很简单：在聊天页面左上角的模型选择菜单中，点击当前的 GPT-5 模型，选择"GPT-5 Thinking"。切换后，刷新页面重试。</p>
       <p>这通常有助于缓解回复的暂时延迟或中断。如果你还不是付费用户，你可以以更实惠的价格在 环球巴士 上<a href="../affiliates.html?aff=universalbus" target="_blank" rel="nofollow noopener" class="external-link">购买 ChatGPT Plus 帐户，享受更稳定的对话体验。</a></p>
 

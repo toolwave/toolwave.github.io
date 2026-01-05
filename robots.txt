@@ -3,4 +3,3 @@ Allow: /
 Crawl-delay: 1
 
 Sitemap: https://toolwave.github.io/sitemap-zh.xml
-Sitemap: https://toolwave.github.io/sitemap-hk.xml
