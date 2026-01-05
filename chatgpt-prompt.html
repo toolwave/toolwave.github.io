@@ -5,21 +5,90 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>如何编写 ChatGPT 提示：2025 终极指南</title>
 <meta name="description" content="随着人工智能的快速发展，ChatGPT 已广泛应用于写作、研究、数据分析等诸多工作学习场景。然而，实际使用中，用户体验却存在很大差异：面对同样的问题，有的人得到的只是模糊、公式化的回答，而有的人却能获得深刻的专业见解。 这种差异的根源在于 ChatGPT 的核心特质之一： 其输出的质量取决于输入的清晰度 。模糊的问题只能产生肤浅的答...">
+<meta name="keywords" content="ChatGPT提示, 提示工程, AI提示词, ChatGPT技巧, 提示编写, AI交互, 高质量回答, 2025指南, 提示优化, AI使用技巧">
 <link rel="canonical" href="https://toolwave.github.io/chatgpt-prompt.html">
-<link rel="icon" href="../assets/icon.png" type="image/x-icon">
+
+<!-- Open Graph 标签 -->
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://toolwave.github.io/chatgpt-prompt.html">
+<meta property="og:title" content="如何编写 ChatGPT 提示：2025 终极指南">
+<meta property="og:description" content="随着人工智能的快速发展，ChatGPT 已广泛应用于写作、研究、数据分析等诸多工作学习场景。然而，实际使用中，用户体验却存在很大差异：面对同样的问题，有的人得到的只是模糊、公式化的回答，而有的人却能获得深刻的专业见解。这种差异的根源在于 ChatGPT 的核心特质之一：其输出的质量取决于输入的清晰度。">
+<meta property="og:image" content="https://toolwave.github.io/img/chatgpt-prompt.png">
+
+<!-- Twitter Card 标签 -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="如何编写 ChatGPT 提示：2025 终极指南">
+<meta name="twitter:description" content="随着人工智能的快速发展，ChatGPT 已广泛应用于写作、研究、数据分析等诸多工作学习场景。然而，实际使用中，用户体验却存在很大差异：面对同样的问题，有的人得到的只是模糊、公式化的回答，而有的人却能获得深刻的专业见解。">
+<meta name="twitter:image" content="https://toolwave.github.io/img/chatgpt-prompt.png">
+<link rel="icon" href="/assets/icon.png" type="image/x-icon">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
-  <link rel="stylesheet" href="../assets/css/style.css">
-  <script src="../assets/js/include.js" defer></script>
-  <script src="../assets/js/main.js" defer></script>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="/assets/js/include.js" defer></script>
+  <script src="/assets/js/main.js" defer></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+
+<!-- 结构化数据 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "如何编写 ChatGPT 提示：2025 终极指南",
+  "author": {
+    "@type": "Organization",
+    "name": "ToolWave"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ToolWave",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://toolwave.github.io/assets/icon.png"
+    }
+  },
+  "datePublished": "2025-01-01",
+  "dateModified": "2025-01-01",
+  "description": "随着人工智能的快速发展，ChatGPT 已广泛应用于写作、研究、数据分析等诸多工作学习场景。本文提供结构化的 ChatGPT 提示指南，从基础知识入手，逐步深入高级技巧。",
+  "image": "https://toolwave.github.io/img/chatgpt-prompt.png"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "ChatGPT 中的提示是什么？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "提示是你向 ChatGPT 提供的文本指令或问题。它指导 AI 如何响应。提示可以是一句话、一个问题或一段详细的解释。提示越清晰、越具体，输出就越准确。"
+    }
+  }, {
+    "@type": "Question",
+    "name": "如何写出完美的提示？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "关键在于清晰、简洁和具体。用自然语言表达你的请求，提供必要的背景和格式要求，并明确目标。逐步引导人工智能或以对话方式引导也能提升结果。"
+    }
+  }, {
+    "@type": "Question",
+    "name": "提示中的关键词是什么？",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "提示关键词是通过设定上下文和方向来引导 AI 输出的字词或短语。例如，"总结"、"写报告"或"面向学生"等关键词有助于塑造答案，使其更符合你的期望。"
+    }
+  }]
+}
+</script>
+
   <style>
 </style>
 </head>
 <body>
 
   <!-- header 调用 -->
-  <div data-include="../partials/header.html"></div>
+  <div data-include="/partials/header.html"></div>
 
   <div class="container">
     <!-- 左侧目录 -->
@@ -31,7 +100,7 @@
     <!-- 中间正文 -->
     <main class="content card">
       <h1>如何编写 ChatGPT 提示：2025 终极指南</h1>
-      <img src="../img/chatgpt-prompt.png" alt="ChatGPT提示词编写终极指南">
+      <img src="/img/chatgpt-prompt.png" alt="ChatGPT提示词编写终极指南">
     <p>随着人工智能的快速发展，ChatGPT 已广泛应用于写作、研究、数据分析等诸多工作学习场景。然而，实际使用中，用户体验却存在很大差异：面对同样的问题，有的人得到的只是模糊、公式化的回答，而有的人却能获得深刻的专业见解。</p>
     <p>这种差异的根源在于 ChatGPT 的核心特质之一：<span class="external-link"> 其输出的质量取决于输入的清晰度 </span>。模糊的问题只能产生肤浅的答案，而清晰具体的提示则引导模型提供真正有价值的内容。</p>
     <p>换句话说，限制不在于工具本身，而在于<span class="external-link"> 用户编写提示的能力 </span>。本文将提供结构化的 ChatGPT 提示指南，从基础知识入手，逐步深入高级技巧，帮助你始终如一地获得高质量的结果。</p>
@@ -56,17 +125,17 @@
         <li>语言风格：清晰易懂</li>
       </ul>
       <p>这种清晰的程度确保了输出结果不仅更具相关性，而且更实用、更有针对性。下图展示了两种提示生成结果的比较，差异一目了然。</p>
-      <img src="pictures/img10.webp" style="width:100%; height:auto; display:block; margin:0 auto;" alt="模糊提示与清晰提示生成结果对比">
+      <img src="/pictures/img10.webp" style="width:100%; height:auto; display:block; margin:0 auto;" alt="模糊提示与清晰提示生成结果对比" loading="lazy">
 
       <h3>2. 为 ChatGPT 分配角色</h3>
       <p>正如演员需要剧本和角色一样，人工智能也需要"<span class="external-link"> 身份标签 </span>"才能采取正确的表达方式。</p>
       <p>根据你的需求，你可以让 ChatGPT 扮演经验丰富的营销总监、产品经理、科学家或教育工作者。角色的针对性和专业性直接影响输出的相关性和深度。</p>
       <p><span class="external-link"> 基本提示 </span>：</p>
-      <p><em>写一篇关于<a href="../top-5-must-know-ai-trends-in-2025.html" target="_blank" rel="noopener noreferrer" class="external-link">AI发展趋势</a>的介绍。</em></p>
+      <p><em>写一篇关于<a href="/top-5-must-know-ai-trends-in-2025.html" target="_blank" rel="noopener noreferrer" class="external-link">AI发展趋势</a>的介绍。</em></p>
       <p><span class="external-link"> 更好的提示 </span>：</p>
       <p><em>作为一名科技记者，请为科技爱好者撰写一篇关于人工智能发展趋势的介绍，重点介绍交通和教育领域。</em></p>
       <p>从结果来看，很明显，一个简单的"写介绍"请求只会产生一个广泛而通用的回应，但分配"科技记者"的角色促使 ChatGPT 提供更专业的观点。</p>
-      <img src="pictures/img8.webp" style="width:100%; height:auto; display:block; margin:0 auto;" alt="为ChatGPT分配角色后的输出效果对比">
+      <img src="/pictures/img8.webp" style="width:100%; height:auto; display:block; margin:0 auto;" alt="为ChatGPT分配角色后的输出效果对比" loading="lazy">
       <p>如果想要内容更深入，还可以为角色添加<span class="external-link"> "属性" </span>。这样，ChatGPT 就不仅仅承担起一个身份，还能采用更具体的写作习惯或偏好。</p>
       <p><span class="external-link"> 基本提示 </span>：</p>
       <p><em>撰写一份关于 GPT-5 的报告。</em></p>
@@ -90,7 +159,7 @@
       </ul>
       <p><em>以表格形式呈现每日菜单，并在末尾添加注释，说明可能的成分替换和重要提醒。</em></p>
       <p>输出的差异是显而易见的：只有明确定义格式和要求，结果才会结构良好、实用且符合你的需求。</p>
-      <img src="pictures/img4.webp" style="width:100%; height:auto; display:block; margin:0 auto;" alt="结构化减肥膳食计划示例">
+      <img src="/pictures/img4.webp" style="width:100%; height:auto; display:block; margin:0 auto;" alt="结构化减肥膳食计划示例" loading="lazy">
 
       <h3>4.提供输出示例</h3>
       <p>当你希望 AI 生成<span class="external-link"> 特定风格或格式 </span>的内容时，给出示例是最直接有效的方法。这能让 ChatGPT 快速掌握你的期望，并在示例的基础上进行创新。例如：</p>
@@ -104,7 +173,7 @@
       <p><span class="external-link"> 反面例子也可能有帮助 </span>，因为它们明确地告诉人工智能应该避免什么，这有助于防止不令人满意的输出：</p>
       <p><em>撰写一篇社交媒体推广帖子。请避免以下风格：</em> "我们的产品非常出色，无与伦比，将以前所未有的方式彻底改变世界……"</p>
       <p>通过设置这些"红线"，ChatGPT 将自动避开夸张的营销语言。</p>
-      <p><span class="external-link"> 在数据处理场景中 </span>，示例的作用甚至更大。例如，在<a href="../how-to-upload-pdf-to-chatgpt.html" target="_blank" rel="noopener noreferrer" class="external-link">上传 PDF 报告</a>时，你可以首先展示预期的输入输出关系，以便 ChatGPT 快速了解你的需求：</p>
+      <p><span class="external-link"> 在数据处理场景中 </span>，示例的作用甚至更大。例如，在<a href="/how-to-upload-pdf-to-chatgpt.html" target="_blank" rel="noopener noreferrer" class="external-link">上传 PDF 报告</a>时，你可以首先展示预期的输入输出关系，以便 ChatGPT 快速了解你的需求：</p>
       <p><span class="external-link"> 基本提示 </span>：</p>
       <p><em>将 PDF 中的数据总结为简洁的结论。</em></p>
       <p><span class="external-link"> 更好的提示 </span>：</p>
@@ -114,7 +183,7 @@
         <li><span class="external-link"> 输出： </span>产品 A 的销量最高（1200），比产品 B 多 400</li>
       </ul>
       <p>如下图所示，清晰的提示结合示例，使ChatGPT能够快速掌握处理逻辑，并准确地将模式应用于数据处理任务。</p>
-      <img src="pictures/img6.webp" style="width:100%; height:auto; display:block; margin:0 auto;" alt="PDF数据处理输入输出示例">
+      <img src="/pictures/img6.webp" style="width:100%; height:auto; display:block; margin:0 auto;" alt="PDF数据处理输入输出示例" loading="lazy">
       <p>对于复杂的内容创建任务，你甚至可以提供喜欢和不喜欢的风格的多个示例，以帮助 AI 更准确地了解你的偏好。</p>
 
       <h3>5.避免歧义和冗余</h3>
@@ -125,7 +194,7 @@
       <p><em>我想写一些吸引读者的内容。也许是关于健康、旅行或科技的内容——我不确定哪个更好。但我希望它引人入胜。你能给我一些想法，或者直接帮我写一篇文章吗？</em></p>
       <p><span class="external-link"> 简洁明了的提示 </span>：</p>
       <p><em>请提供三个博客文章主题——健康、旅行和科技。解释每个主题吸引读者的原因，并附上每篇文章的提纲。</em></p>
-      <img src="pictures/img9.webp" style="width:100%; height:auto; display:block; margin:0 auto;" alt="冗长提示与简洁提示效果对比">
+      <img src="/pictures/img9.webp" style="width:100%; height:auto; display:block; margin:0 auto;" alt="冗长提示与简洁提示效果对比" loading="lazy">
       </section>
 
     <section>
@@ -148,10 +217,10 @@
       <h3>3. 将任务分解为多个步骤</h3>
       <p>复杂的任务通常可以分解成一系列简单的步骤。这种方法不仅可以提高每个步骤的输出质量，还能让你灵活地调整和指导整个流程。</p>
       <p>例如，在编写市场研究报告时，你可以首先要求 ChatGPT 总结行业背景，然后组织竞争对手数据，接着生成图表，最后起草结论和建议，而不是尝试一次性创建整个报告。</p>
-      <img src="pictures/img5.webp" style="width:100%; height:auto; display:block; margin:0 auto;" alt="将复杂任务分解为多个步骤示例">
+      <img src="/pictures/img5.webp" style="width:100%; height:auto; display:block; margin:0 auto;" alt="将复杂任务分解为多个步骤示例" loading="lazy">
       <p>通过使用这种<span class="external-link"> 循序渐进的方法 </span>，你可以在每个阶段检查 ChatGPT 的输出是否符合你的期望，并根据需要进行调整，而不是最终得到一个可能需要大量修改的完整计划。</p>
       <p>值得注意的是，这种多步骤协作<span class="external-link"> 很大程度上依赖于 ChatGPT 的上下文保持能力 </span>。如果你经常处理此类复杂项目，那么拥有更长内存和更强逻辑一致性的 ChatGPT Plus 可以显著提升结果。</p>
-      <p>对于预算有限的用户，可以像我一样，通过 环球巴士 购买<a href="../affiliates.html?aff=universalbus" target="_blank" rel="nofollow noopener" class="external-link"> ChatGPT Plus 账户</a>。价格不到官方订阅的三分之一，但功能齐全，运行流畅可靠。</p>
+      <p>对于预算有限的用户，可以像我一样，通过 环球巴士 购买<a href="/affiliates.html?aff=universalbus" target="_blank" rel="nofollow noopener" class="external-link"> ChatGPT Plus 账户</a>。价格不到官方订阅的三分之一，但功能齐全，运行流畅可靠。</p>
 
       <h3>4. 使用AI提示生成器</h3>
       <p>当你有明确的目标，但不确定如何表达时，不妨先使用提示生成器，将你的想法转化为具体的提示。利用 ChatGPT 丰富的知识和对语言模式的掌握，完善你的措辞。</p>
@@ -166,7 +235,7 @@
       <h3>5. 反馈和及时优化</h3>
       <p>当 ChatGPT 的回复不符合你的预期时，不要简单地重新提问或放弃。更有效的方法是<span class="external-link"> 指出你不满意的地方 </span>并解释你的需求："这个答案太笼统了；请用更多日常类比来解释这个概念。"</p>
       <p>你还可以单击<span class="external-link"> 反馈控件 </span>（输出下方的"竖起大拇指"或"竖起大拇指"图标）并添加具体的改进建议。</p>
-      <img src="pictures/img7.webp" style="width:100%; height:auto; display:block; margin:0 auto;" alt="ChatGPT反馈控件点赞点踩功能">
+      <img src="/pictures/img7.webp" style="width:100%; height:auto; display:block; margin:0 auto;" alt="ChatGPT反馈控件点赞点踩功能" loading="lazy">
       <p>同时，收集并记录那些特别有效的提示模式和结构，以构建你的<span class="external-link"> 个人提示库 </span>。你会发现不同的框架适合不同的任务，而某些措辞会持续引导人工智能进行更深入的推理。</p>
       <p>这些积累的经验将使你与 ChatGPT 的交互越来越高效。</p>
     </section>
@@ -175,7 +244,7 @@
       <h2 class="external-link">最佳 ChatGPT 提示生成器</h2>
       <p>如前所述，一个好的提示生成器可以帮助你快速创建清晰具体的提示。根据我的经验，以下工具比较突出：</p>
       <ul>
-        <li><span class="external-link"> 独立知识产权管理委员会 </span></li>
+        <li><span class="external-link"> AIPRM </span></li>
       </ul>
       <p>这是一个<span class="external-link"> 浏览器扩展提示生成器 </span>，内置了庞大的模板库。我经常用它来完成一些重复性的任务，比如撰写产品描述或社交媒体文案。使用经过社区测试的模板可以节省大量时间，而且只需稍加调整，就能根据我的需求进行调整。</p>
       <ul>
@@ -189,11 +258,11 @@
       <ul>
         <li><span class="external-link"> PromptHero </span></li>
       </ul>
-      <p>PromptHero 最大的优势在于<span class="external-link"> 跨平台支持 </span>。PromptHero 最大的亮点在于其跨平台支持。它不仅支持 ChatGPT，还可以为 MidJourney和其他图像创作工具生成<a href="../prompts-for-midjourney.html" target="_blank" rel="noopener noreferrer" class="external-link">提示</a>。</p>
+      <p>PromptHero 最大的优势在于<span class="external-link"> 跨平台支持 </span>。PromptHero 最大的亮点在于其跨平台支持。它不仅支持 ChatGPT，还可以为 MidJourney和其他图像创作工具生成<a href="/prompts-for-midjourney.html" target="_blank" rel="noopener noreferrer" class="external-link">提示</a>。</p>
       <p>对于像我这样使用多个平台的人来说，在一个地方拥有各种提示可以使管理变得更加容易，同时还可以实现跨项目的重复使用和比较。</p>
-      <p>为了更有效地管理和改进提示，我还在<a href="../affiliates.html?aff=universalbus" target="_blank" rel="nofollow noopener" class="external-link"> ChatGPT </a>中测试了不同的措辞，ChatGPT 是一个结合了 ChatGPT、Claude、MidJourney 和其他主流模型的集成 AI 平台。</p>
+      <p>为了更有效地管理和改进提示，我还在<a href="/affiliates.html?aff=universalbus" target="_blank" rel="nofollow noopener" class="external-link"> ChatGPT </a>中测试了不同的措辞，ChatGPT 是一个结合了 ChatGPT、Claude、MidJourney 和其他主流模型的集成 AI 平台。</p>
       <p>它提供了<span class="external-link"> 多模型比较功能 </span>，让你可以直接比较同一提示在不同模型中的表现，并快速找到最佳配方。</p>
-      <p>当<a href="../chatgpt-down.html" target="_blank" rel="noopener noreferrer" class="external-link">ChatGPT 出现故障</a>或速度变慢时，这种多平台设置特别有用，因为 ChatGPT 可以让工作顺利进行。</p>
+      <p>当<a href="/chatgpt-down.html" target="_blank" rel="noopener noreferrer" class="external-link">ChatGPT 出现故障</a>或速度变慢时，这种多平台设置特别有用，因为 ChatGPT 可以让工作顺利进行。</p>
     </section>
 
     <section>
@@ -316,7 +385,7 @@
 
     <section>
       <h2 class="external-link">结论</h2>
-      <p>编写高质量的 ChatGPT 提示并非一项复杂的技能，而是一项可以通过持续练习来提升的能力。首先<a href="../how-to-use-chatgpt.html" target="_blank" rel="noopener noreferrer" class="external-link">掌握 ChatGPT 的工作原理</a>，然后运用本文介绍的策略，<span class="external-link"> 你可以显著提高输出的质量和可靠性 </span>。</p>
+      <p>编写高质量的 ChatGPT 提示并非一项复杂的技能，而是一项可以通过持续练习来提升的能力。首先<a href="/how-to-use-chatgpt.html" target="_blank" rel="noopener noreferrer" class="external-link">掌握 ChatGPT 的工作原理</a>，然后运用本文介绍的策略，<span class="external-link"> 你可以显著提高输出的质量和可靠性 </span>。</p>
       <p>除此之外，使用像 ChatGPT 这样的多模型平台可以大大提高优化效率。通过比较同一提示在不同模型上的表现，你可以快速找到最有效的措辞，并不断完善你的提示。</p>
       <p>随着时间的推移，你将建立自己的<span class="external-link"> 个性化提示库 </span>，将 AI 变成真正可靠的助手。</p>
     </section>
@@ -344,28 +413,28 @@
     <div class="merchant-list">
       <div class="merchant-item">
         <div class="merchant-info">
-          <img src="img/环球巴士 logo.png" alt="环球巴士 logo" />
+          <img src="/img/环球巴士 logo.png" alt="环球巴士 logo" />
           <span class="merchant-name">环球巴士</span>
         </div>
-        <a href="../affiliates.html?aff=universalbus" target="_blank">
+        <a href="/affiliates.html?aff=universalbus" target="_blank">
           <button>访问</button>
         </a>
       </div>
       <div class="merchant-item">
         <div class="merchant-info">
-          <img src="img/银河录像局 logo.jpg" alt="银河录像局 logo" />
+          <img src="/img/银河录像局 logo.jpg" alt="银河录像局 logo" />
           <span class="merchant-name">银河录像局</span>
         </div>
-        <a href="../affiliates.html?aff=nfvideo" target="_blank">
+        <a href="/affiliates.html?aff=nfvideo" target="_blank">
           <button>访问</button>
         </a>
       </div>
       <div class="merchant-item">
         <div class="merchant-info">
-          <img src="img/奈飞小铺 logo.png" alt="奈飞小铺 logo" />
+          <img src="/img/奈飞小铺 logo.png" alt="奈飞小铺 logo" />
           <span class="merchant-name">奈飞小铺</span>
         </div>
-        <a href="../affiliates.html?aff=ihezu" target="_blank">
+        <a href="/affiliates.html?aff=ihezu" target="_blank">
           <button>访问</button>
         </a>
       </div>
@@ -393,14 +462,14 @@
   </div>
 
   <!-- footer 调用 -->
-  <div data-include="../partials/footer.html"></div>
+  <div data-include="/partials/footer.html"></div>
   
   <button id="backToTop">↑</button>
 
 
   <!-- 脚本引入 -->
-  <script src="assets/js/include.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="/assets/js/include.js"></script>
+  <script src="/assets/js/main.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
   <script>hljs.highlightAll();</script>
 </body>
