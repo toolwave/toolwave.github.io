@@ -47,8 +47,8 @@
         "url": "https://toolwave.github.io/assets/icon.png"
       }
     },
-    "datePublished": "2025-01-05",
-    "dateModified": "2025-01-05",
+    "datePublished": "2026-01-05",
+    "dateModified": "2026-01-05",
     "description": "GPT-5即将推出！了解OpenAI最新模型的发布时间、核心功能、统一架构、扩展上下文窗口等关键升级，以及GPT-5与GPT-4.5的区别。",
     "mainEntityOfPage": {
       "@type": "WebPage",
@@ -206,61 +206,6 @@
     </section>
     </main>
 
-
-<!-- 右侧商家推荐（替换整块） -->
-<aside class="sidebar-right">
-
-  <!-- 商家推荐卡片（单独卡片） -->
-  <div class="card merchant-card">
-    <h3>商家推荐</h3>
-    <div class="merchant-list">
-      <div class="merchant-item">
-        <div class="merchant-info">
-          <img src="/img/环球巴士 logo.png" alt="环球巴士 logo" />
-          <span class="merchant-name">环球巴士</span>
-        </div>
-        <a href="/affiliates.html?aff=universalbus" target="_blank">
-          <button>访问</button>
-        </a>
-      </div>
-      <div class="merchant-item">
-        <div class="merchant-info">
-          <img src="/img/银河录像局 logo.jpg" alt="银河录像局 logo" />
-          <span class="merchant-name">银河录像局</span>
-        </div>
-        <a href="/affiliates.html?aff=nfvideo" target="_blank">
-          <button>访问</button>
-        </a>
-      </div>
-      <div class="merchant-item">
-        <div class="merchant-info">
-          <img src="/img/奈飞小铺 logo.png" alt="奈飞小铺 logo" />
-          <span class="merchant-name">奈飞小铺</span>
-        </div>
-        <a href="/affiliates.html?aff=ihezu" target="_blank">
-          <button>访问</button>
-        </a>
-      </div>
-</div>
-  </div>
-
-  <!-- 热门标签卡片（单独卡片） -->
-  <div class="card tag-card">
-    <h3>热门标签</h3>
-    <div class="tag-wrap" aria-hidden="false">
-      <button class="tag-pill">GPT-5</button>
-      <button class="tag-pill">OpenAI</button>
-      <button class="tag-pill">Sam Altman</button>
-      <button class="tag-pill">AI新模型</button>
-      <button class="tag-pill">GPT-4o</button>
-      <button class="tag-pill">统一架构</button>
-      <button class="tag-pill">AI升级</button>
-      <button class="tag-pill">GPT-5发布</button>
-      <button class="tag-pill">AI推理</button>
-      <button class="tag-pill">智能助手</button>
-    </div>
-  </div>
-</aside>
 
   </div>
 
